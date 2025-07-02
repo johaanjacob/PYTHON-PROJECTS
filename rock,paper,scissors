@@ -1,0 +1,22 @@
+import random
+a = input("rock, paper, scissors: ")
+choices = ["rock", "paper", "scissors"]
+b = random.choice(choices)
+
+print("Computer chose:", b)
+if a == "rock" and b == "scissors":
+    print("Rock crushes scissors. You win!")
+elif a == "paper" and b == "rock":
+    print("Paper covers rock. You win!")
+elif a == "scissors" and b == "paper":
+    print("Scissors cuts paper. You win!")
+
+elif a == "rock" and b == "paper":
+    print("Paper covers rock. You lose!")
+elif a == "paper" and b == "scissors":
+    print("Scissors cuts paper. You lose!")
+elif a == "scissors" and b == "rock":
+    print("Rock crushes scissors. You lose!")
+
+else:
+    print("it is a draw")
