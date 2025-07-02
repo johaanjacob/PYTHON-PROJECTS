@@ -1,0 +1,19 @@
+total=0
+name=(input("enter the students name:"))
+for i in range(1):
+ total=0
+for j in range(5):
+  marks=int(input("enter the students marks:"))
+  total+=marks
+  average=total/5
+if average>=90:
+    result="grade a"
+elif average>=80:
+     result="grade b"
+elif average>=70:
+    result="grade c"
+elif average>=60:
+    result="grade d"
+else:
+    result="grade e"
+    print("the student name is:,",name,'\n', "the total is:,",total,'\n', "the average is:,",average, '\n',"the grade is:,",result,)
